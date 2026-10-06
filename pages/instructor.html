@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Profile - Elearn</title>
+    <meta name="description" content="Meet our instructor John Smith - Senior Web Developer &amp; Instructor">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/instructor.css">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                </div>
+
+                <button class="nav-toggle" data-mobile-menu-btn aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+                <div class="nav-menu" id="mobile-menu" data-mobile-menu>
+                    <div class="nav-menu-header">
+                        <a href="../index.html" class="nav-logo">
+                            <span class="nav-logo-icon">🎓</span>
+                            <span class="nav-logo-text">Elearn</span>
+                        </a>
+                        <button class="nav-close" data-mobile-menu-close aria-label="Close menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item nav-item-dropdown" data-dropdown>
+                            <button class="nav-link nav-link-dropdown active" data-dropdown-toggle aria-expanded="false">
+                                Pages
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M4.293 5.293a1 1 0 011.414 0L8 7.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                                <li><a href="instructor.html" class="dropdown-item active">Instructor</a></li>
+                                <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                                <li><a href="contact.html" class="dropdown-item">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <button class="btn btn-ghost btn-icon" data-search-btn aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="9" r="7"></circle>
+                                <path d="M18 18l-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                        <a href="auth.html" class="btn btn-ghost">Sign In</a>
+                        <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Instructor</span>
+                </nav>
+                <h1 class="page-title">Instructor Profile</h1>
+                <p class="page-description">Learn from industry experts</p>
+            </div>
+        </section>
+
+        <section class="instructor-profile-section section">
+            <div class="container">
+                <div class="instructor-card card">
+                    <div class="instructor-header">
+                        <div class="instructor-avatar-lg">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="John Smith" onerror="this.style.display='none'; this.parentElement.textContent='JS'">
+                        </div>
+                        <div class="instructor-main-info">
+                            <h2 class="instructor-name-lg">John Smith</h2>
+                            <p class="instructor-title-lg">Senior Web Developer &amp; Instructor</p>
+                            <p class="instructor-bio-short">
+                                Full-stack developer with 10+ years of experience. Passionate about teaching and helping students achieve their goals.
+                            </p>
+                            <div class="instructor-stats-lg">
+                                <div class="instructor-stat-card">
+                                    <div class="stat-number-lg">4.9</div>
+                                    <div class="stat-label-lg">Average Rating</div>
+                                </div>
+                                <div class="instructor-stat-card">
+                                    <div class="stat-number-lg">12.5k</div>
+                                    <div class="stat-label-lg">Students</div>
+                                </div>
+                                <div class="instructor-stat-card">
+                                    <div class="stat-number-lg">5</div>
+                                    <div class="stat-label-lg">Courses</div>
+                                </div>
+                                <div class="instructor-stat-card">
+                                    <div class="stat-number-lg">2.5k</div>
+                                    <div class="stat-label-lg">Reviews</div>
+                                </div>
+                            </div>
+                            <div class="instructor-social">
+                                <a href="#" class="social-link" aria-label="Website">🌐</a>
+                                <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                                <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                                <a href="#" class="social-link" aria-label="GitHub">💻</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instructor-details">
+                        <div class="instructor-about">
+                            <h3 class="details-title">About Me</h3>
+                            <p class="details-text">
+                                I'm John Smith, a senior web developer and passionate instructor with over 10 years of experience in the tech industry. 
+                                I've worked with startups and Fortune 500 companies, building scalable web applications and mentoring junior developers.
+                            </p>
+                            <p class="details-text">
+                                My mission is to make high-quality web development education accessible to everyone. I believe in practical, 
+                                hands-on learning that prepares students for real-world challenges.
+                            </p>
+                            <p class="details-text">
+                                When I'm not coding or teaching, I enjoy contributing to open-source projects, writing technical blogs, 
+                                and exploring new technologies.
+                            </p>
+                        </div>
+
+                        <div class="instructor-expertise">
+                            <h3 class="details-title">Areas of Expertise</h3>
+                            <div class="expertise-tags">
+                                <span class="expertise-tag">HTML/CSS</span>
+                                <span class="expertise-tag">JavaScript</span>
+                                <span class="expertise-tag">React</span>
+                                <span class="expertise-tag">Node.js</span>
+                                <span class="expertise-tag">Python</span>
+                                <span class="expertise-tag">Full-Stack Development</span>
+                                <span class="expertise-tag">Web Architecture</span>
+                                <span class="expertise-tag">Technical Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor-courses">
+                    <div class="section-header">
+                        <h2>Courses by John Smith</h2>
+                        <p>Explore his top-rated courses</p>
+                    </div>
+                    <div class="grid grid-3">
+                        <article class="course-card card">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Web Development Fundamentals" onerror="this.src='https://placehold.co/400x250/4f46e5/ffffff?text=Web+Dev'">
+                                <span class="course-badge badge badge-primary">Beginner</span>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">Web Development</div>
+                                <h3 class="course-title">
+                                    <a href="course-detail.html">Web Development Fundamentals</a>
+                                </h3>
+                                <p class="course-description">
+                                    Learn HTML, CSS, JavaScript and build modern websites from scratch.
+                                </p>
+                                <div class="course-meta">
+                                    <div class="course-rating">
+                                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                                        <span class="rating-value">4.8</span>
+                                        <span class="rating-count">(2.5k)</span>
+                                    </div>
+                                    <div class="course-students">👥 12.5k</div>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="price">
+                                        <span class="price-current">$89.00</span>
+                                    </div>
+                                    <a href="course-detail.html" class="btn btn-primary btn-sm">View Course</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card card">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop" alt="Advanced React" onerror="this.src='https://placehold.co/400x250/61dafb/ffffff?text=React'">
+                                <span class="course-badge badge badge-warning">Advanced</span>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">Web Development</div>
+                                <h3 class="course-title">
+                                    <a href="course-detail.html">Advanced React Masterclass</a>
+                                </h3>
+                                <p class="course-description">
+                                    Master React hooks, context API, performance optimization, and advanced patterns.
+                                </p>
+                                <div class="course-meta">
+                                    <div class="course-rating">
+                                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                                        <span class="rating-value">4.9</span>
+                                        <span class="rating-count">(1.8k)</span>
+                                    </div>
+                                    <div class="course-students">👥 5.2k</div>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="price">
+                                        <span class="price-current">$129.00</span>
+                                    </div>
+                                    <a href="course-detail.html" class="btn btn-primary btn-sm">View Course</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card card">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" alt="Node.js Backend" onerror="this.src='https://placehold.co/400x250/339933/ffffff?text=Node'">
+                                <span class="course-badge badge badge-secondary">Intermediate</span>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">Backend</div>
+                                <h3 class="course-title">
+                                    <a href="course-detail.html">Node.js &amp; Express Mastery</a>
+                                </h3>
+                                <p class="course-description">
+                                    Build scalable REST APIs, handle authentication, and work with databases using Node.js.
+                                </p>
+                                <div class="course-meta">
+                                    <div class="course-rating">
+                                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                                        <span class="rating-value">4.8</span>
+                                        <span class="rating-count">(1.2k)</span>
+                                    </div>
+                                    <div class="course-students">👥 4.8k</div>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="price">
+                                        <span class="price-current">$119.00</span>
+                                    </div>
+                                    <a href="course-detail.html" class="btn btn-primary btn-sm">View Course</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                    <p class="footer-description">
+                        Empowering learners worldwide with quality education and expert instruction.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="footer-social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="footer-social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">📸</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="instructor.html" class="footer-link">Instructors</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-list">
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-description">Subscribe to get updates on new courses</p>
+                    <form class="footer-form" data-validate>
+                        <div class="form-group">
+                            <input type="email" class="input" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Elearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" data-back-to-top aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5"></path>
+            <path d="M5 12l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

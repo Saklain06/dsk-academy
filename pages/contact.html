@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Elearn</title>
+    <meta name="description" content="Get in touch with Elearn. We're here to help with your questions and feedback.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                </div>
+
+                <button class="nav-toggle" data-mobile-menu-btn aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+                <div class="nav-menu" id="mobile-menu" data-mobile-menu>
+                    <div class="nav-menu-header">
+                        <a href="../index.html" class="nav-logo">
+                            <span class="nav-logo-icon">🎓</span>
+                            <span class="nav-logo-text">Elearn</span>
+                        </a>
+                        <button class="nav-close" data-mobile-menu-close aria-label="Close menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item nav-item-dropdown" data-dropdown>
+                            <button class="nav-link nav-link-dropdown" data-dropdown-toggle aria-expanded="false">
+                                Pages
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M4.293 5.293a1 1 0 011.414 0L8 7.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                                <li><a href="instructor.html" class="dropdown-item">Instructor</a></li>
+                                <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                                <li><a href="contact.html" class="dropdown-item active">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <button class="btn btn-ghost btn-icon" data-search-btn aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="9" r="7"></circle>
+                                <path d="M18 18l-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                        <a href="auth.html" class="btn btn-ghost">Sign In</a>
+                        <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Contact</span>
+                </nav>
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-description">Have a question? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="contact-section section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info card">
+                        <h2 class="contact-info-title">Get In Touch</h2>
+                        <p class="contact-info-text">Feel free to reach out to us through any of these channels.</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h3>Address</h3>
+                                    <p>123 Learning Street, Education City, EC 10001</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>support@elearn.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-card card">
+                        <h2 class="form-title">Send Us a Message</h2>
+                        <form class="contact-form" data-validate>
+                            <div class="form-group">
+                                <label class="label">Name</label>
+                                <input type="text" class="input" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Email</label>
+                                <input type="email" class="input" placeholder="Your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Subject</label>
+                                <input type="text" class="input" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Message</label>
+                                <textarea class="input" rows="5" placeholder="Your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                    <p class="footer-description">
+                        Empowering learners worldwide with quality education and expert instruction.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="footer-social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="footer-social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">📸</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="instructor.html" class="footer-link">Instructors</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-list">
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-description">Subscribe to get updates on new courses</p>
+                    <form class="footer-form" data-validate>
+                        <div class="form-group">
+                            <input type="email" class="input" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Elearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" data-back-to-top aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5"></path>
+            <path d="M5 12l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

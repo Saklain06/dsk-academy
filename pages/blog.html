@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Elearn</title>
+    <meta name="description" content="Latest articles, tips, and insights about online learning and education.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                </div>
+
+                <button class="nav-toggle" data-mobile-menu-btn aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+                <div class="nav-menu" id="mobile-menu" data-mobile-menu>
+                    <div class="nav-menu-header">
+                        <a href="../index.html" class="nav-logo">
+                            <span class="nav-logo-icon">🎓</span>
+                            <span class="nav-logo-text">Elearn</span>
+                        </a>
+                        <button class="nav-close" data-mobile-menu-close aria-label="Close menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item nav-item-dropdown" data-dropdown>
+                            <button class="nav-link nav-link-dropdown" data-dropdown-toggle aria-expanded="false">
+                                Pages
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M4.293 5.293a1 1 0 011.414 0L8 7.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                                <li><a href="instructor.html" class="dropdown-item">Instructor</a></li>
+                                <li><a href="blog.html" class="dropdown-item active">Blog</a></li>
+                                <li><a href="contact.html" class="dropdown-item">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <button class="btn btn-ghost btn-icon" data-search-btn aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="9" r="7"></circle>
+                                <path d="M18 18l-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                        <a href="auth.html" class="btn btn-ghost">Sign In</a>
+                        <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Blog</span>
+                </nav>
+                <h1 class="page-title">Our Blog</h1>
+                <p class="page-description">Latest articles, tips, and insights from our experts</p>
+            </div>
+        </section>
+
+        <section class="blog-section section">
+            <div class="container">
+                <div class="blog-grid grid grid-3">
+                    <article class="blog-card card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop" alt="Online Learning Tips" onerror="this.src='https://placehold.co/400x250/4f46e5/ffffff?text=Blog'">
+                            <span class="blog-category badge badge-primary">Learning Tips</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-meta-item">📅 Jan 15, 2026</span>
+                                <span class="blog-meta-item">⏱️ 5 min read</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="blog-detail.html">10 Tips for Success in Online Learning</a>
+                            </h3>
+                            <p class="blog-description">
+                                Discover effective strategies to stay focused, motivated, and get the most out of your online courses.
+                            </p>
+                            <a href="blog-detail.html" class="blog-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" alt="Career Growth" onerror="this.src='https://placehold.co/400x250/06b6d4/ffffff?text=Blog'">
+                            <span class="blog-category badge badge-primary">Career</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-meta-item">📅 Jan 12, 2026</span>
+                                <span class="blog-meta-item">⏱️ 7 min read</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="blog-detail.html">How Online Courses Can Boost Your Career</a>
+                            </h3>
+                            <p class="blog-description">
+                                Learn how upskilling with online courses can help you land better opportunities and advance your career.
+                            </p>
+                            <a href="blog-detail.html" class="blog-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Web Development" onerror="this.src='https://placehold.co/400x250/f59e0b/ffffff?text=Blog'">
+                            <span class="blog-category badge badge-primary">Technology</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-meta-item">📅 Jan 8, 2026</span>
+                                <span class="blog-meta-item">⏱️ 8 min read</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="blog-detail.html">Web Development Trends to Watch in 2026</a>
+                            </h3>
+                            <p class="blog-description">
+                                Stay ahead of the curve with the latest trends and technologies shaping the future of web development.
+                            </p>
+                            <a href="blog-detail.html" class="blog-link">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="pagination mt-8" aria-label="Pagination">
+                    <button class="pagination-btn" disabled aria-label="Previous page">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12.5 5l-5 5 5 5"/>
+                        </svg>
+                    </button>
+                    <button class="pagination-btn active" aria-current="page">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn" aria-label="Next page">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7.5 5l5 5-5 5"/>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                    <p class="footer-description">
+                        Empowering learners worldwide with quality education and expert instruction.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="footer-social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="footer-social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">📸</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="instructor.html" class="footer-link">Instructors</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-list">
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-description">Subscribe to get updates on new courses</p>
+                    <form class="footer-form" data-validate>
+                        <div class="form-group">
+                            <input type="email" class="input" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Elearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" data-back-to-top aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5"></path>
+            <path d="M5 12l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

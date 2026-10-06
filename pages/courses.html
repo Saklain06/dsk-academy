@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses - Elearn</title>
+    <meta name="description" content="Browse all online courses. Find courses by category, level, and price.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/courses.css">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                </div>
+
+                <button class="nav-toggle" data-mobile-menu-btn aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+                <div class="nav-menu" id="mobile-menu" data-mobile-menu>
+                    <div class="nav-menu-header">
+                        <a href="../index.html" class="nav-logo">
+                            <span class="nav-logo-icon">🎓</span>
+                            <span class="nav-logo-text">Elearn</span>
+                        </a>
+                        <button class="nav-close" data-mobile-menu-close aria-label="Close menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link active">Courses</a>
+                        </li>
+                        <li class="nav-item nav-item-dropdown" data-dropdown>
+                            <button class="nav-link nav-link-dropdown" data-dropdown-toggle aria-expanded="false">
+                                Pages
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M4.293 5.293a1 1 0 011.414 0L8 7.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                                <li><a href="instructor.html" class="dropdown-item">Instructor</a></li>
+                                <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                                <li><a href="contact.html" class="dropdown-item">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <button class="btn btn-ghost btn-icon" data-search-btn aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="9" r="7"></circle>
+                                <path d="M18 18l-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                        <a href="auth.html" class="btn btn-ghost">Sign In</a>
+                        <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Courses</span>
+                </nav>
+                <h1 class="page-title">All Courses</h1>
+                <p class="page-description">Explore our collection of 1000+ online courses</p>
+            </div>
+        </section>
+
+        <section class="courses-section section">
+            <div class="container">
+                <div class="courses-header">
+                    <div class="courses-count">
+                        <span class="count-number">24</span> courses found
+                    </div>
+                    <div class="courses-sort">
+                        <label for="sort-select" class="sr-only">Sort by</label>
+                        <select id="sort-select" class="input select" data-sort>
+                            <option value="popular">Most Popular</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="courses-layout">
+                    <aside class="filters-sidebar">
+                        <div class="filters-header">
+                            <h2 class="filters-title">Filters</h2>
+                            <button class="btn btn-ghost btn-sm" data-filter-clear>Clear All</button>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-group-title">Category</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="radio" name="category" value="all" checked data-filter="category">
+                                    <span class="filter-label">All Categories</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="category" value="web" data-filter="category">
+                                    <span class="filter-label">Web Development</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="category" value="design" data-filter="category">
+                                    <span class="filter-label">UI/UX Design</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="category" value="data" data-filter="category">
+                                    <span class="filter-label">Data Science</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="category" value="mobile" data-filter="category">
+                                    <span class="filter-label">Mobile Development</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="category" value="marketing" data-filter="category">
+                                    <span class="filter-label">Digital Marketing</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-group-title">Level</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="radio" name="level" value="all" checked data-filter="level">
+                                    <span class="filter-label">All Levels</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="level" value="beginner" data-filter="level">
+                                    <span class="filter-label">Beginner</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="level" value="intermediate" data-filter="level">
+                                    <span class="filter-label">Intermediate</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="level" value="advanced" data-filter="level">
+                                    <span class="filter-label">Advanced</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-group-title">Price</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="all" checked data-filter="price">
+                                    <span class="filter-label">All Prices</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="free" data-filter="price">
+                                    <span class="filter-label">Free</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="paid" data-filter="price">
+                                    <span class="filter-label">Paid</span>
+                                </label>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="courses-grid">
+                        <article class="course-card card" data-course-card data-course-category="web" data-course-level="beginner" data-course-price="89">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Web Development Fundamentals" onerror="this.src='https://placehold.co/400x250/4f46e5/ffffff?text=Web+Dev'">
+                                <span class="course-badge badge badge-primary">Beginner</span>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">Web Development</div>
+                                <h3 class="course-title">
+                                    <a href="course-detail.html" data-course-link>Web Development Fundamentals</a>
+                                </h3>
+                                <p class="course-description">
+                                    Learn HTML, CSS, JavaScript and build modern websites from scratch.
+                                </p>
+                                <div class="course-meta">
+                                    <div class="course-rating">
+                                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                                        <span class="rating-value">4.8</span>
+                                        <span class="rating-count">(2.5k)</span>
+                                    </div>
+                                    <div class="course-students">👥 12.5k</div>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="price">
+                                        <span class="price-current">$89.00</span>
+                                    </div>
+                                    <div class="course-actions">
+                                        <button class="btn btn-ghost btn-icon" data-course-wishlist="1" aria-label="Add to wishlist">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M17.367 3.633a2.25 2.25 0 00-3.182 0L10 7.818 5.815 3.633a2.25 2.25 0 00-3.182 3.182L6.818 11l-4.185 4.185a2.25 2.25 0 003.182 3.182L10 14.182l4.185 4.185a2.25 2.25 0 003.182-3.182L13.182 11l4.185-4.185a2.25 2.25 0 000-3.182z"/>
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-primary btn-sm" data-course-cart="1">Enroll Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card card" data-course-card data-course-category="design" data-course-level="intermediate" data-course-price="129">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1561070791-36c11767b26a?w=400&h=250&fit=crop" alt="UI/UX Design Masterclass" onerror="this.src='https://placehold.co/400x250/06b6d4/ffffff?text=UI+UX'">
+                                <span class="course-badge badge badge-secondary">Intermediate</span>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">Design</div>
+                                <h3 class="course-title">
+                                    <a href="course-detail.html" data-course-link>UI/UX Design Masterclass</a>
+                                </h3>
+                                <p class="course-description">
+                                    Master user interface and experience design with Figma, prototyping, and design thinking.
+                                </p>
+                                <div class="course-meta">
+                                    <div class="course-rating">
+                                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                                        <span class="rating-value">4.9</span>
+                                        <span class="rating-count">(1.8k)</span>
+                                    </div>
+                                    <div class="course-students">👥 8.5k</div>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="price">
+                                        <span class="price-current">$129.00</span>
+                                    </div>
+                                    <div class="course-actions">
+                                        <button class="btn btn-ghost btn-icon" data-course-wishlist="2" aria-label="Add to wishlist">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M17.367 3.633a2.25 2.25 0 00-3.182 0L10 7.818 5.815 3.633a2.25 2.25 0 00-3.182 3.182L6.818 11l-4.185 4.185a2.25 2.25 0 003.182 3.182L10 14.182l4.185 4.185a2.25 2.25 0 003.182-3.182L13.182 11l4.185-4.185a2.25 2.25 0 000-3.182z"/>
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-primary btn-sm" data-course-cart="2">Enroll Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card card" data-course-card data-course-category="data" data-course-level="advanced" data-course-price="149">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Data Science Bootcamp" onerror="this.src='https://placehold.co/400x250/f59e0b/ffffff?text=Data+Science'">
+                                <span class="course-badge badge badge-warning">Advanced</span>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">Data Science</div>
+                                <h3 class="course-title">
+                                    <a href="course-detail.html" data-course-link>Data Science Bootcamp</a>
+                                </h3>
+                                <p class="course-description">
+                                    Learn Python, statistics, machine learning, and data visualization.
+                                </p>
+                                <div class="course-meta">
+                                    <div class="course-rating">
+                                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                                        <span class="rating-value">4.9</span>
+                                        <span class="rating-count">(1.2k)</span>
+                                    </div>
+                                    <div class="course-students">👥 6.2k</div>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="price">
+                                        <span class="price-current">$149.00</span>
+                                    </div>
+                                    <div class="course-actions">
+                                        <button class="btn btn-ghost btn-icon" data-course-wishlist="3" aria-label="Add to wishlist">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M17.367 3.633a2.25 2.25 0 00-3.182 0L10 7.818 5.815 3.633a2.25 2.25 0 00-3.182 3.182L6.818 11l-4.185 4.185a2.25 2.25 0 003.182 3.182L10 14.182l4.185 4.185a2.25 2.25 0 003.182-3.182L13.182 11l4.185-4.185a2.25 2.25 0 000-3.182z"/>
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-primary btn-sm" data-course-cart="3">Enroll Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card card" data-course-card data-course-category="mobile" data-course-level="beginner" data-course-price="79">
+                            <div class="course-image">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop" alt="Mobile App Development" onerror="this.src='https://placehold.co/400x250/10b981/ffffff?text=Mobile'">
+                                <span class="course-badge badge badge-primary">Beginner</span>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">Mobile Development</div>
+                                <h3 class="course-title">
+                                    <a href="course-detail.html" data-course-link>React Native Mobile Development</a>
+                                </h3>
+                                <p class="course-description">
+                                    Build cross-platform mobile apps with React Native for iOS and Android.
+                                </p>
+                                <div class="course-meta">
+                                    <div class="course-rating">
+                                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                                        <span class="rating-value">4.7</span>
+                                        <span class="rating-count">(1.5k)</span>
+                                    </div>
+                                    <div class="course-students">👥 5.8k</div>
+                                </div>
+                                <div class="course-footer">
+                                    <div class="price">
+                                        <span class="price-current">$79.00</span>
+                                    </div>
+                                    <div class="course-actions">
+                                        <button class="btn btn-ghost btn-icon" data-course-wishlist="4" aria-label="Add to wishlist">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M17.367 3.633a2.25 2.25 0 00-3.182 0L10 7.818 5.815 3.633a2.25 2.25 0 00-3.182 3.182L6.818 11l-4.185 4.185a2.25 2.25 0 003.182 3.182L10 14.182l4.185 4.185a2.25 2.25 0 003.182-3.182L13.182 11l4.185-4.185a2.25 2.25 0 000-3.182z"/>
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-primary btn-sm" data-course-cart="4">Enroll Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <nav class="pagination" aria-label="Pagination">
+                    <button class="pagination-btn" disabled aria-label="Previous page">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12.5 5l-5 5 5 5"/>
+                        </svg>
+                    </button>
+                    <button class="pagination-btn active" aria-current="page">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn" aria-label="Next page">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7.5 5l5 5-5 5"/>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                    <p class="footer-description">
+                        Empowering learners worldwide with quality education and expert instruction.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="footer-social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="footer-social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">📸</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="instructor.html" class="footer-link">Instructors</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-list">
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-description">Subscribe to get updates on new courses</p>
+                    <form class="footer-form" data-validate>
+                        <div class="form-group">
+                            <input type="email" class="input" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Elearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" data-back-to-top aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5"></path>
+            <path d="M5 12l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <div class="search-modal" data-search-modal>
+        <div class="search-modal-overlay"></div>
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <input type="text" class="search-modal-input" data-search-input placeholder="Search courses, instructors, or topics..." autocomplete="off">
+                <button class="search-modal-close" data-search-close aria-label="Close search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="search-modal-body">
+                <p class="search-modal-placeholder">Start typing to search...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/courses.js"></script>
+</body>
+</html>

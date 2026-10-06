@@ -1,0 +1,16 @@
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Backups & Temporary files
+*.backup.*
+*.bak
+*.tmp
+inspect_template.py
+
+# Logs
+*.log

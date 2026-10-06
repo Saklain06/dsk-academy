@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Fundamentals - Elearn</title>
+    <meta name="description" content="Learn HTML, CSS, JavaScript and build modern websites from scratch.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                </div>
+
+                <button class="nav-toggle" data-mobile-menu-btn aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+                <div class="nav-menu" id="mobile-menu" data-mobile-menu>
+                    <div class="nav-menu-header">
+                        <a href="../index.html" class="nav-logo">
+                            <span class="nav-logo-icon">🎓</span>
+                            <span class="nav-logo-text">Elearn</span>
+                        </a>
+                        <button class="nav-close" data-mobile-menu-close aria-label="Close menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item nav-item-dropdown" data-dropdown>
+                            <button class="nav-link nav-link-dropdown" data-dropdown-toggle aria-expanded="false">
+                                Pages
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M4.293 5.293a1 1 0 011.414 0L8 7.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                                <li><a href="instructor.html" class="dropdown-item">Instructor</a></li>
+                                <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                                <li><a href="contact.html" class="dropdown-item">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <button class="btn btn-ghost btn-icon" data-search-btn aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="9" r="7"></circle>
+                                <path d="M18 18l-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                        <a href="auth.html" class="btn btn-ghost">Sign In</a>
+                        <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <a href="courses.html" class="breadcrumb-link">Courses</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Web Development Fundamentals</span>
+                </nav>
+                <div class="course-header-content">
+                    <div class="course-header-text">
+                        <div class="course-header-tags">
+                            <span class="badge badge-primary">Beginner</span>
+                            <span class="badge badge-outline">Web Development</span>
+                        </div>
+                        <h1 class="course-header-title">Web Development Fundamentals</h1>
+                        <p class="course-header-description">
+                            Learn HTML, CSS, JavaScript and build modern websites from scratch. 
+                            Master the fundamentals and get ready for advanced web development.
+                        </p>
+                        <div class="course-header-meta">
+                            <div class="course-meta-item">
+                                <span class="rating">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-value">4.8</span>
+                                <span class="rating-count">(2.5k reviews)</span>
+                            </div>
+                            <div class="course-meta-item">
+                                <span>👥 12.5k students</span>
+                            </div>
+                            <div class="course-meta-item">
+                                <span>⏱️ 20 hours</span>
+                            </div>
+                            <div class="course-meta-item">
+                                <span>📚 15 lessons</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-content-section section">
+            <div class="container">
+                <div class="course-layout">
+                    <div class="course-main">
+                        <div class="course-tabs" data-tabs>
+                            <div class="tabs">
+                                <button class="tab-btn active" data-tab-btn="overview">Overview</button>
+                                <button class="tab-btn" data-tab-btn="curriculum">Curriculum</button>
+                                <button class="tab-btn" data-tab-btn="instructor">Instructor</button>
+                                <button class="tab-btn" data-tab-btn="reviews">Reviews</button>
+                            </div>
+
+                            <div class="tab-panel active" data-tab-panel="overview">
+                                <h2 class="panel-title">About This Course</h2>
+                                <p class="panel-text">
+                                    This comprehensive course covers all the essential concepts you need to start building 
+                                    websites. You'll learn HTML for structure, CSS for styling, and JavaScript for interactivity.
+                                </p>
+                                <p class="panel-text">
+                                    By the end of this course, you'll be able to create responsive, modern websites from scratch 
+                                    and have a solid foundation for further learning in web development.
+                                </p>
+
+                                <h3 class="panel-subtitle">What You'll Learn</h3>
+                                <div class="learning-list">
+                                    <div class="learning-item">
+                                        <span class="learning-icon">✓</span>
+                                        <span>Build responsive websites with HTML5 &amp; CSS3</span>
+                                    </div>
+                                    <div class="learning-item">
+                                        <span class="learning-icon">✓</span>
+                                        <span>Add interactivity with JavaScript &amp; ES6</span>
+                                    </div>
+                                    <div class="learning-item">
+                                        <span class="learning-icon">✓</span>
+                                        <span>Master CSS Flexbox &amp; Grid layouts</span>
+                                    </div>
+                                    <div class="learning-item">
+                                        <span class="learning-icon">✓</span>
+                                        <span>Understand web development best practices</span>
+                                    </div>
+                                    <div class="learning-item">
+                                        <span class="learning-icon">✓</span>
+                                        <span>Deploy websites to production</span>
+                                    </div>
+                                    <div class="learning-item">
+                                        <span class="learning-icon">✓</span>
+                                        <span>Debug and troubleshoot common issues</span>
+                                    </div>
+                                </div>
+
+                                <h3 class="panel-subtitle">Requirements</h3>
+                                <ul class="requirements-list">
+                                    <li>No prior programming experience required</li>
+                                    <li>A computer with internet connection</li>
+                                    <li>Willingness to learn and practice</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-panel" data-tab-panel="curriculum">
+                                <h2 class="panel-title">Course Curriculum</h2>
+                                <div class="accordion" data-accordion="single">
+                                    <div class="accordion-item">
+                                        <button class="accordion-header" data-accordion-header>
+                                            <span class="accordion-title">Introduction &amp; Setup</span>
+                                            <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-body">
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">Welcome to the Course</span>
+                                                    <span class="curriculum-duration">5 min</span>
+                                                </div>
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">📄</span>
+                                                    <span class="curriculum-title">Course Overview &amp; Resources</span>
+                                                    <span class="curriculum-duration">3 min</span>
+                                                </div>
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">⚙️</span>
+                                                    <span class="curriculum-title">Setting Up Your Development Environment</span>
+                                                    <span class="curriculum-duration">10 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-header" data-accordion-header>
+                                            <span class="accordion-title">HTML Fundamentals</span>
+                                            <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-body">
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">Introduction to HTML</span>
+                                                    <span class="curriculum-duration">8 min</span>
+                                                </div>
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">HTML Elements &amp; Attributes</span>
+                                                    <span class="curriculum-duration">12 min</span>
+                                                </div>
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">Semantic HTML</span>
+                                                    <span class="curriculum-duration">10 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-header" data-accordion-header>
+                                            <span class="accordion-title">CSS Styling</span>
+                                            <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-body">
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">CSS Basics &amp; Selectors</span>
+                                                    <span class="curriculum-duration">15 min</span>
+                                                </div>
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">Box Model &amp; Layout</span>
+                                                    <span class="curriculum-duration">12 min</span>
+                                                </div>
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">Flexbox &amp; Grid</span>
+                                                    <span class="curriculum-duration">20 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-header" data-accordion-header>
+                                            <span class="accordion-title">JavaScript Essentials</span>
+                                            <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="accordion-content">
+                                            <div class="accordion-body">
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">JavaScript Fundamentals</span>
+                                                    <span class="curriculum-duration">18 min</span>
+                                                </div>
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">DOM Manipulation</span>
+                                                    <span class="curriculum-duration">15 min</span>
+                                                </div>
+                                                <div class="curriculum-item">
+                                                    <span class="curriculum-icon">▶️</span>
+                                                    <span class="curriculum-title">Events &amp; Interactivity</span>
+                                                    <span class="curriculum-duration">12 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel" data-tab-panel="instructor">
+                                <h2 class="panel-title">Your Instructor</h2>
+                                <div class="instructor-profile">
+                                    <div class="instructor-avatar">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop" alt="John Smith" onerror="this.style.display='none'; this.parentElement.textContent='JS'">
+                                    </div>
+                                    <div class="instructor-info">
+                                        <h3 class="instructor-name">John Smith</h3>
+                                        <p class="instructor-title">Senior Web Developer &amp; Instructor</p>
+                                        <p class="instructor-bio">
+                                            John is a full-stack web developer with 10+ years of experience. 
+                                            He has worked with companies like Google and Microsoft, and has taught 
+                                            web development to over 50,000 students worldwide.
+                                        </p>
+                                        <div class="instructor-stats">
+                                            <div class="instructor-stat">
+                                                <span class="stat-number">4.9</span>
+                                                <span class="stat-label">Rating</span>
+                                            </div>
+                                            <div class="instructor-stat">
+                                                <span class="stat-number">12.5k</span>
+                                                <span class="stat-label">Students</span>
+                                            </div>
+                                            <div class="instructor-stat">
+                                                <span class="stat-number">5</span>
+                                                <span class="stat-label">Courses</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel" data-tab-panel="reviews">
+                                <h2 class="panel-title">Student Reviews</h2>
+                                <div class="reviews-summary">
+                                    <div class="review-rating">
+                                        <div class="review-rating-number">4.8</div>
+                                        <div class="review-rating-stars">⭐⭐⭐⭐⭐</div>
+                                        <div class="review-rating-count">Based on 2,540 reviews</div>
+                                    </div>
+                                    <div class="review-breakdown">
+                                        <div class="review-breakdown-item">
+                                            <span class="breakdown-stars">5 ⭐</span>
+                                            <div class="breakdown-bar">
+                                                <div class="breakdown-fill" style="width: 78%"></div>
+                                            </div>
+                                            <span class="breakdown-percent">78%</span>
+                                        </div>
+                                        <div class="review-breakdown-item">
+                                            <span class="breakdown-stars">4 ⭐</span>
+                                            <div class="breakdown-bar">
+                                                <div class="breakdown-fill" style="width: 15%"></div>
+                                            </div>
+                                            <span class="breakdown-percent">15%</span>
+                                        </div>
+                                        <div class="review-breakdown-item">
+                                            <span class="breakdown-stars">3 ⭐</span>
+                                            <div class="breakdown-bar">
+                                                <div class="breakdown-fill" style="width: 5%"></div>
+                                            </div>
+                                            <span class="breakdown-percent">5%</span>
+                                        </div>
+                                        <div class="review-breakdown-item">
+                                            <span class="breakdown-stars">2 ⭐</span>
+                                            <div class="breakdown-bar">
+                                                <div class="breakdown-fill" style="width: 2%"></div>
+                                            </div>
+                                            <span class="breakdown-percent">2%</span>
+                                        </div>
+                                        <div class="review-breakdown-item">
+                                            <span class="breakdown-stars">1 ⭐</span>
+                                            <div class="breakdown-bar">
+                                                <div class="breakdown-fill" style="width: 0%"></div>
+                                            </div>
+                                            <span class="breakdown-percent">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-list">
+                                    <div class="review-card card">
+                                        <div class="review-header">
+                                            <div class="review-avatar">SJ</div>
+                                            <div class="review-author-info">
+                                                <div class="review-author-name">Sarah Johnson</div>
+                                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                                <div class="review-date">2 weeks ago</div>
+                                            </div>
+                                        </div>
+                                        <p class="review-text">
+                                            Excellent course! John explains everything clearly and the examples are practical. 
+                                            I built my first website within a week. Highly recommended!
+                                        </p>
+                                    </div>
+
+                                    <div class="review-card card">
+                                        <div class="review-header">
+                                            <div class="review-avatar">MC</div>
+                                            <div class="review-author-info">
+                                                <div class="review-author-name">Mike Chen</div>
+                                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                                <div class="review-date">1 month ago</div>
+                                            </div>
+                                        </div>
+                                        <p class="review-text">
+                                            Great introduction to web development. The curriculum is well-structured and 
+                                            easy to follow. Perfect for beginners!
+                                        </p>
+                                    </div>
+
+                                    <div class="review-card card">
+                                        <div class="review-header">
+                                            <div class="review-avatar">ED</div>
+                                            <div class="review-author-info">
+                                                <div class="review-author-name">Emily Davis</div>
+                                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                                <div class="review-date">2 months ago</div>
+                                            </div>
+                                        </div>
+                                        <p class="review-text">
+                                            Love this course! Clear explanations, great exercises, and valuable resources. 
+                                            Exactly what I needed to get started.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="course-sidebar">
+                        <div class="course-card-sticky card">
+                            <div class="course-image-preview">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=200&fit=crop" alt="Web Development" onerror="this.src='https://placehold.co/400x200/4f46e5/ffffff?text=Web+Dev'">
+                            </div>
+                            <div class="course-sidebar-content">
+                                <div class="course-price">
+                                    <span class="price-current">$89.00</span>
+                                    <span class="price-original">$129.00</span>
+                                </div>
+                                <div class="course-sidebar-actions">
+                                    <button class="btn btn-primary w-full btn-lg" data-course-enroll>Enroll Now</button>
+                                    <button class="btn btn-outline w-full" data-course-wishlist-sidebar>Add to Wishlist</button>
+                                    <button class="btn btn-ghost w-full">Share Course</button>
+                                </div>
+                                <div class="course-sidebar-meta">
+                                    <div class="sidebar-meta-item">
+                                        <span class="sidebar-meta-icon">⏱️</span>
+                                        <span class="sidebar-meta-text">20 hours total</span>
+                                    </div>
+                                    <div class="sidebar-meta-item">
+                                        <span class="sidebar-meta-icon">📚</span>
+                                        <span class="sidebar-meta-text">15 lessons</span>
+                                    </div>
+                                    <div class="sidebar-meta-item">
+                                        <span class="sidebar-meta-icon">🎯</span>
+                                        <span class="sidebar-meta-text">Beginner level</span>
+                                    </div>
+                                    <div class="sidebar-meta-item">
+                                        <span class="sidebar-meta-icon">💻</span>
+                                        <span class="sidebar-meta-text">Access on all devices</span>
+                                    </div>
+                                    <div class="sidebar-meta-item">
+                                        <span class="sidebar-meta-icon">🏆</span>
+                                        <span class="sidebar-meta-text">Certificate of completion</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="../index.html" class="nav-logo">
+                        <span class="nav-logo-icon">🎓</span>
+                        <span class="nav-logo-text">Elearn</span>
+                    </a>
+                    <p class="footer-description">
+                        Empowering learners worldwide with quality education and expert instruction.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="footer-social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="footer-social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">📸</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="instructor.html" class="footer-link">Instructors</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-list">
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-description">Subscribe to get updates on new courses</p>
+                    <form class="footer-form" data-validate>
+                        <div class="form-group">
+                            <input type="email" class="input" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Elearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" data-back-to-top aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5"></path>
+            <path d="M5 12l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/course-detail.js"></script>
+</body>
+</html>
