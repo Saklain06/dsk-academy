@@ -313,9 +313,9 @@
           </a>
         </div>
         <div class="col-auto">
-          <a href="mailto:contact@dskacademy.com" class="cus-btn bg-white border-btn small-btn">
-            <span>Contact Us</span>
-            <span>Contact Us</span>
+          <a href="tel:+919821576600" class="cus-btn bg-white border-btn small-btn">
+            <span><i class="fa-solid fa-phone me-1"></i> +91 98215 76600</span>
+            <span><i class="fa-solid fa-phone me-1"></i> +91 98215 76600</span>
           </a>
         </div>
       </div>
@@ -366,13 +366,13 @@
         <div class="notify-form-wrap">
           <form class="notify-form" id="notifyForm">
             <input 
-              type="email" 
+              type="tel" 
               class="notify-input" 
-              id="notifyEmail" 
-              placeholder="Enter your email to get notified..." 
+              id="notifyPhone" 
+              placeholder="Enter your phone number to get notified..." 
               required 
-              autocomplete="email"
-              aria-label="Email address for launch notification"
+              autocomplete="tel"
+              aria-label="Phone number for launch notification"
             >
             <button type="submit" class="cus-btn bg-orenge notify-btn">
               <span>Notify Me</span>
@@ -387,11 +387,11 @@
         <!-- DIRECT CONTACT -->
         <div class="launch-contact">
           <span>Need immediate assistance?</span>
-          <a href="mailto:contact@dskacademy.com">
-            <i class="fa-regular fa-envelope" style="color: #055BAD;"></i> contact@dskacademy.com
+          <a href="tel:+919821576600">
+            <i class="fa-solid fa-phone" style="color: #055BAD;"></i> +91 98215 76600
           </a>
-          <a href="tel:+918001234567">
-            <i class="fa-solid fa-phone" style="color: #055BAD;"></i> +91 800-123-4567
+          <a href="https://wa.me/919821576600?text=Hello%20DSK%20Academy%2C%20I%20am%20interested%20in%20your%20upcoming%20courses." target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" style="color: #25D366; font-size: 17px;"></i> WhatsApp
           </a>
         </div>
       </div>
@@ -407,7 +407,7 @@
 
   <!-- Floating WhatsApp Chat Widget -->
   <a 
-    href="https://wa.me/918001234567?text=Hello%20DSK%20Academy%2C%20I%20am%20interested%20in%20your%20upcoming%20courses." 
+    href="https://wa.me/919821576600?text=Hello%20DSK%20Academy%2C%20I%20am%20interested%20in%20your%20upcoming%20courses." 
     class="dsk-whatsapp-btn dsk-whatsapp-float" 
     target="_blank" 
     rel="noopener" 
@@ -461,17 +461,17 @@
 
     // Simple Notify Form
     const notifyForm = document.getElementById('notifyForm');
-    const notifyEmail = document.getElementById('notifyEmail');
+    const notifyPhone = document.getElementById('notifyPhone');
     const notifySuccess = document.getElementById('notifySuccess');
 
     notifyForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      const email = notifyEmail.value.trim();
-      if (!email) return;
+      const phone = notifyPhone.value.trim();
+      if (!phone) return;
 
       try {
         const subscribers = JSON.parse(localStorage.getItem('dsk_launch_subscribers') || '[]');
-        subscribers.push({ email: email, date: new Date().toISOString() });
+        subscribers.push({ phone: phone, date: new Date().toISOString() });
         localStorage.setItem('dsk_launch_subscribers', JSON.stringify(subscribers));
       } catch (err) {
         console.error(err);
